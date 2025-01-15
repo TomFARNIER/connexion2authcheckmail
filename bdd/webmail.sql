@@ -40,8 +40,7 @@ CREATE TABLE `users` (
 -- Déchargement des données de la table `users`
 --
 
-INSERT INTO `users` (`id`, `email`, `password`, `verification_token`, `is_verified`, `is_logged_in`) VALUES
-(23, 'noahfarnier@gmail.com', '$2y$10$KHBuyDhLsDjJsA7CxyXvP.9Ag5o2XMpzUP0A5BhPiHLiJ277Ezzdy', NULL, 1, 0);
+
 
 -- --------------------------------------------------------
 
@@ -61,10 +60,6 @@ CREATE TABLE `verification_codes` (
 -- Déchargement des données de la table `verification_codes`
 --
 
-INSERT INTO `verification_codes` (`id`, `user_id`, `code`, `expires_at`, `token`) VALUES
-(30, 23, '191761', '2025-01-15 10:49:30', '76e86fe28430864a7af72aff75aa72a031725fc6b3c0350273735bb0d13343ea'),
-(31, 23, '941747', '2025-01-15 11:19:09', '094a741629f68b64c0126aa1684ce51e5359a1083c2baf3dcb51460dabad0a2e');
-
 -- --------------------------------------------------------
 
 --
@@ -82,9 +77,6 @@ CREATE TABLE `verification_tokens` (
 --
 -- Déchargement des données de la table `verification_tokens`
 --
-
-INSERT INTO `verification_tokens` (`id`, `user_id`, `token`, `created_at`, `expires_at`) VALUES
-(2, 23, 'c77b5f4ce08d0dd5767dfc7c8e330a06083603019df905e4c79236bdc6f8c83e', '2025-01-15 10:46:56', '2025-01-15 10:56:56');
 
 --
 -- Index pour les tables déchargées
